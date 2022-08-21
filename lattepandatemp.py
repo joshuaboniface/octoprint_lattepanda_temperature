@@ -1,13 +1,8 @@
 # coding=utf-8
 from __future__ import absolute_import
-from flask import jsonify, request, make_response, Response
-import json
 import serial
-from octoprint.events import eventManager, Events
 from octoprint.util import RepeatedTimer
-from octoprint.server.util.flask import restricted_access
 import octoprint.plugin
-import octoprint.util
 
 
 # LattePanda Arduino Serial settings
